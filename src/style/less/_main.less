@@ -1,0 +1,248 @@
+.virtual-healthcare,
+.leading-providers,
+.download {
+    margin-top: 85px;
+    margin-bottom: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    .description {
+        color: @secondary-color;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+
+    >div {
+        max-width: 445px;
+    }
+
+}
+
+.our-services {
+    max-width: 1120px;
+    margin: 0 auto;
+
+    >.title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    >.subtitle {
+        color: @secondary-color;
+        font-size: 16px;
+        max-width: 950px;
+        margin: 0 auto 80px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .flex-wrapper {
+        >div {
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.5);
+            border-radius: 20px;
+            width: 350px;
+            max-width: 32%;
+            padding: 50px 40px;
+            background: #fff;
+            margin-bottom: 35px;
+        }
+
+        .image {
+            height: 100px;
+            display: table-cell;
+            vertical-align: bottom;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 24px;
+            margin: 25px 0;
+        }
+
+        .description {
+            font-size: 16px;
+            color: @secondary-color;
+            line-height: 28px;
+            word-break: break-all;
+        }
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .bg {
+        position: absolute;
+        transform: translateY(-150%);
+        z-index: -1;
+        left: 0;
+    }
+}
+
+.leading-providers,
+.download {
+    margin-top: 220px;
+
+    .title {
+        font-size: 36px;
+        font-weight: 700;
+
+        &-hr::after {
+            margin: 25px 0;
+        }
+    }
+}
+
+.reviews {
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    padding: 65px 120px;
+    color: white;
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+
+    .flex-wrapper {
+        align-items: center;
+    }
+
+    >.title {
+        font-weight: 700;
+        font-size: 36px;
+        color: white;
+        text-align: center;
+
+        &-hr::after {
+            background: white;
+        }
+    }
+
+    .description {
+        max-width: 420px;
+        font-size: 19px;
+        line-height: 30px;
+        font-weight: 300;
+    }
+
+    .name {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .job {
+        font-size: 18px;
+        margin-top: 15px;
+        font-weight: 300;
+    }
+
+    .bg-elem {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 90px;
+        overflow: hidden;
+        filter: sepia(1);
+    }
+
+    .bg-elem2 {
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        margin-left: -90px;
+        z-index: -1;
+    }
+
+}
+
+.last-article {
+    width: 1120px;
+    margin: 0 auto;
+    margin-top: 220px;
+
+    >.title {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .flex-wrapper {
+
+        >div {
+            max-width: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+            position: relative;
+
+            .image {
+                display: block;
+            }
+
+            >img+div {
+                padding: 25px 33px;
+                background: #fff;
+            }
+        }
+
+
+        .title {
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 32px;
+        }
+
+        .description {
+            font-size: 16px;
+            font-weight: 300;
+            color: @secondary-color;
+            line-height: 28px;
+            margin-top: 12px;
+        }
+
+        .link {
+            font-weight: 700;
+            color: @btn-clr;
+            text-decoration: none;
+            display: block;
+            margin-top: 25px;
+
+            img {
+                vertical-align: middle;
+                transform: rotate(-90deg);
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .btn {
+        display: block;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
+
+    .bg-elem {
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    .bg {
+        position: absolute;
+        margin-top: -750px;
+        right: 0;
+        z-index: -1;
+    }
+}
