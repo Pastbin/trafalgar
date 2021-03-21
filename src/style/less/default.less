@@ -9,7 +9,6 @@
 .container{
     width: 1247px;
     max-width: 100%;
-    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -59,6 +58,27 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.leading-providers,
+.download,
+.reviews,
+.our-services,
+.last-article {
+    .title {
+        font-weight: bold;
+        font-size: 36px;
+
+        &-hr::after {
+            margin: 25px 0;
+        }
+    }
+
+    .description {
+        color: @secondary-color;
+        font-size: 18px;
+        line-height: 30px;
+    }
 }
 
 .title-hr::after{
