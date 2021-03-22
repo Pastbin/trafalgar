@@ -21,7 +21,7 @@ body{
     padding: 18px 40px;
     border-radius: 55px;
     color: @btn-clr;
-    background: #fff;
+    background: transparent;
     margin-top: 72px;
     cursor: pointer;
     font-size: 18px;
@@ -52,6 +52,10 @@ body{
     &:hover{
         background: linear-gradient(@btn-clr, darken(@btn-clr, 50%));
     }
+
+    @media screen and (max-width: 500px) {
+    background: fade(@btn-clr, 85%);
+    }
 }
 
 .flex-wrapper{
@@ -78,6 +82,11 @@ body{
         color: @secondary-color;
         font-size: 18px;
         line-height: 30px;
+
+        @media screen and (max-width: 500px) {
+        color: darken(@secondary-color, 30%);
+        font-weight: normal;
+        }
     }
 }
 
@@ -88,4 +97,8 @@ height: 2px;
 background: #000;
 display: block;
 margin: 25px auto;
+
+@media screen and (max-width: 500px) {
+margin: 25px auto !important;
+}
 }

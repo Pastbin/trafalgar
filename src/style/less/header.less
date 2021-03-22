@@ -3,6 +3,7 @@
     justify-content: space-between;
     margin-top: 50px;
     align-items: center;
+    padding: 0 @paddingLeftRight;
 
     @media screen and (max-width: 850px) {
     display: block;
@@ -22,7 +23,7 @@
         a {
             text-decoration: none;
             color: @secondary-color;
-            margin-right: 40px;
+            margin: 0 20px;
             font-size: 18px;
 
             &:hover{
@@ -30,7 +31,11 @@
             }
 
             @media screen and (max-width: 850px) {
-                margin: 0;
+                margin: 0 10px
+            }
+
+            @media screen and (max-width: 550px) {
+            margin-bottom: 15px;
             }
         }
 
@@ -38,9 +43,14 @@
             width: 100%;
             text-align: center;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            padding: 0 20px;
         }
+
+        @media screen and (max-width: 550px) {
+            justify-content: space-evenly;
+        }
+
     }
 
     .active {
