@@ -6,7 +6,6 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1250px;
-    padding: 0 @paddingLeftRight;
 
     .text-wrapper {
         max-width: 445px;
@@ -68,7 +67,6 @@
 .our-services {
     max-width: 1120px;
     margin: 0 auto;
-    padding: 0 @paddingLeftRight;
 
     &::-webkit-scrollbar{
         width: 0;
@@ -213,6 +211,7 @@
 
     .flex-wrapper {
         align-items: center;
+        justify-content: center;
 
         @media screen and (max-width: 850px) {
             justify-content: center;
@@ -227,14 +226,23 @@
             background: white;
             margin: 25px auto;
         }
+
+        @media screen and (max-width: 450px) {
+        font-size: 30px;
+        }
     }
 
     .image {
         margin-right: 30px;
         margin-bottom: 15px;
+        max-width: 35%;
 
         @media screen and (max-width: 450px) {
-            display: none;
+            margin-right: 10px;
+        }
+
+        img{
+            width: 100%;
         }
     }
 
@@ -244,12 +252,19 @@
         max-width: 40%;
         font-size: 19px;
         font-weight: 300;
+        margin-left: 10%;
 
         @media screen and (max-width: 850px) {
             max-width: none;
             flex-grow: 1;
             margin-top: 15px;
             text-align: center;
+        }
+
+        @media screen and (max-width: 450px) {
+            margin: 0;
+            margin-top: 25px;
+            text-align: justify;;
         }
     }
 
@@ -285,8 +300,12 @@
         z-index: -1;
     }
 
-    @media screen and (max-width: 850px) {
-        padding: 30px;
+    @media screen and (max-width: 950px) {
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 450px) {
+    padding: @paddingLeftRight;
     }
 }
 
@@ -294,7 +313,7 @@
     width: 1120px;
     max-width: 100%;
     margin: 220px auto 0;
-    padding: 0 @paddingLeftRight;
+    padding: 0 dingLeftRight;
 
     .title {
         text-align: center;
@@ -415,6 +434,11 @@
     &-dots {
         bottom: auto;
         text-align: center;
+    }
+
+    &-wrapper {
+        max-width: 1120px;
+        margin: 0 auto;
     }
 }
 

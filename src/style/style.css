@@ -264,6 +264,7 @@
   width: 1247px;
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 body {
   font-family: "Mulish", sans-serif;
@@ -457,7 +458,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   max-width: 1250px;
-  padding: 0 20px;
 }
 .virtual-healthcare .text-wrapper,
 .leading-providers .text-wrapper,
@@ -525,7 +525,6 @@ body {
 .our-services {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 .our-services::-webkit-scrollbar {
   width: 0;
@@ -664,6 +663,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 850px) {
   .reviews .flex-wrapper {
@@ -680,14 +682,23 @@ body {
   background: white;
   margin: 25px auto;
 }
+@media screen and (max-width: 450px) {
+  .reviews > .title {
+    font-size: 30px;
+  }
+}
 .reviews .image {
   margin-right: 30px;
   margin-bottom: 15px;
+  max-width: 35%;
 }
 @media screen and (max-width: 450px) {
   .reviews .image {
-    display: none;
+    margin-right: 10px;
   }
+}
+.reviews .image img {
+  width: 100%;
 }
 .reviews .description {
   color: white;
@@ -695,6 +706,7 @@ body {
   max-width: 40%;
   font-size: 19px;
   font-weight: 300;
+  margin-left: 10%;
 }
 @media screen and (max-width: 850px) {
   .reviews .description {
@@ -704,6 +716,13 @@ body {
             flex-grow: 1;
     margin-top: 15px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .reviews .description {
+    margin: 0;
+    margin-top: 25px;
+    text-align: justify;
   }
 }
 .reviews .name {
@@ -736,16 +755,21 @@ body {
   margin-left: -90px;
   z-index: -1;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .reviews {
-    padding: 30px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .reviews {
+    padding: 20px;
   }
 }
 .last-article {
   width: 1120px;
   max-width: 100%;
   margin: 220px auto 0;
-  padding: 0 20px;
+  padding: 0 dingLeftRight;
 }
 .last-article .title {
   text-align: center;
@@ -871,6 +895,10 @@ body {
 .slick-dots {
   bottom: auto;
   text-align: center;
+}
+.slick-wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
 }
 .slick-wrapper::before {
   content: url(../img/main/element.svg);
